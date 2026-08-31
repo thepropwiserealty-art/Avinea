@@ -69,9 +69,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mb-20">
           <div className={`space-y-6 ${entranceClasses}`}>
             <div className="flex items-center space-x-3">
-              <div className="bg-white/10 backdrop-blur-sm p-3 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="bg-white/95 backdrop-blur-sm p-3 rounded-xl flex items-center justify-center shadow-lg">
                 <Image
-                  src="/logo.webp"
+                  src="/images/logo.png"
                   alt="Avinea by Vyom Buildzone Logo"
                   width={200}
                   height={56}

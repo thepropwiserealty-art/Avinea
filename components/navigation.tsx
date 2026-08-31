@@ -59,13 +59,13 @@ export default function Navigation() {
             <div 
               className="flex items-center space-x-2 hover:scale-105 transition-transform duration-200 cursor-pointer"
             >
-              <div className="rounded-md flex items-center justify-center">
+              <div className="bg-white/95 px-2.5 py-1 rounded-lg shadow-sm flex items-center justify-center">
                 <Image
-                  src="/logo.webp"
+                  src="/images/logo.png"
                   alt="Avinea by Vyom Buildzone"
-                  width={140}
-                  height={50}
-                  className="h-10 w-auto object-contain"
+                  width={150}
+                  height={55}
+                  className="h-9 w-auto object-contain"
                   priority
                 />
               </div>

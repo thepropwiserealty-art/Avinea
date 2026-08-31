@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: '7 Tectonic Towers with 115m glass elevation.',
     url: 'https://avinea-hadpsar.com/',
     siteName: 'Avinea by Vyom Buildzone',
-    images: [{ url: '/images/avinea-vyom-sigma-exterior.jpg' }], // Now resolves correctly
+    images: [{ url: '/images/logo.png' }], // Now resolves correctly
     locale: 'en_IN',
     type: 'website',
   },

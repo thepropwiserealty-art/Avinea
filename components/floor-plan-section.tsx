@@ -27,6 +27,7 @@ type floorPlan = {
   features: Array<string>
   carParks?: number
   isSoldOut?: boolean
+  pricingTag?: string
 }
 
 const floorPlans: Array<floorPlan> = [
@@ -59,6 +60,7 @@ const floorPlans: Array<floorPlan> = [
     price: "₹2.57 Cr",
     image: "/plan03.jpg",
     carParks: 2,
+    pricingTag: "Limited inventory",
     features: ["Luxurious 4 BHK", "At Hadapsar, Pune", "Natural beauty"],
   },
   {
@@ -139,6 +141,11 @@ export default function FloorPlanSection() {
                         <td className="p-6 font-bold text-lg">
                           <div className="flex items-center gap-2">
                             <span>{plan.name}</span>
+                            {plan.pricingTag && (
+                              <Badge className="text-[10px] uppercase font-bold tracking-wider bg-amber-500/15 text-amber-800 border-amber-300 hover:bg-amber-500/20">
+                                {plan.pricingTag}
+                              </Badge>
+                            )}
                             {plan.isSoldOut && (
                               <Badge variant="destructive" className="text-[10px] uppercase font-bold tracking-wider">
                                 Sold Out
@@ -166,6 +173,11 @@ export default function FloorPlanSection() {
                     <div className="space-y-1">
                       <div className="font-bold text-primary text-lg flex items-center gap-2">
                         <span>{plan.name}</span>
+                        {plan.pricingTag && (
+                          <Badge className="text-[9px] h-4 px-1 uppercase font-bold bg-amber-500/15 text-amber-800 border-amber-300">
+                            {plan.pricingTag}
+                          </Badge>
+                        )}
                         {plan.isSoldOut && (
                           <Badge variant="destructive" className="text-[9px] h-4 px-1 uppercase font-bold">
                             Sold Out
